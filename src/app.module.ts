@@ -5,6 +5,7 @@ import { UserModule } from './user/user.module';
 import { DatabaseModule } from './database/database.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule } from '@nestjs/config';
+import { CategoriesModule } from './categories/categories.module';
 import * as process from "process";
 
 
@@ -23,7 +24,8 @@ import * as process from "process";
     }),
 
       UserModule,
-    DatabaseModule],
+    DatabaseModule,
+    CategoriesModule],
   controllers: [AppController],
   providers: [AppService],
 })
