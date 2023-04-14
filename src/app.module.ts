@@ -12,7 +12,7 @@ import * as process from "process";
   imports: [ ConfigModule.forRoot({isGlobal: true, envFilePath: '.env'}),
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: process.env.HOST,0
+      host: process.env.HOST,
       port: 5432,
       username: process.env.DBUSERNAME,
       password: process.env.PASSWORD,
